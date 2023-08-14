@@ -25,6 +25,7 @@ const TransactionHistory = (props) => {
       setError(null);
 
       if(emptyAccountId()) {
+        setIsLoading(false);
           return;
       }
 
